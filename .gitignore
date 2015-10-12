@@ -2,3 +2,4 @@ nbproject
 .sass-cache
 cache
 release
+node_modules
