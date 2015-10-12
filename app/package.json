@@ -1,0 +1,16 @@
+{
+    "name": "robot-app",
+    "version": "0.1.0",
+    "main": "index.html",
+    "window": {
+        "frame": true,
+        "toolbar": true
+    },
+    "platformOverrides": {
+        "win": {
+            "window": {
+                "frame": true
+            }
+        }
+    }
+}
