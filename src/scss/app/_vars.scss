@@ -1,0 +1,6 @@
+$color_background_base: #333;
+$color_background_darker: darken($color_background_base, 12%);
+$color_background_lighter: lighten($color_background_base, 12%);
+
+$color_foreground_base: #fff;
+$color_window_title: $color_foreground_base;

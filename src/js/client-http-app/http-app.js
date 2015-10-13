@@ -3,8 +3,15 @@ App.HTTPServer = function () {
     var express = require('express');
     var httpApp = express();
 
-    httpApp.use(express.static('client'));
+    httpApp.set('view engine', 'jade');
+    httpApp.set('views', Utils.dirs.client_views);
+
+//    httpApp.use(express.static('client'));
     httpApp.use('/assets', express.static('assets'));
+
+    httpApp.get('/', function (req, res) {
+        res.render('index', {title: 'Home', app: App});
+    });
 
     this.init = function () {
 

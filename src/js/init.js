@@ -3,9 +3,8 @@ var App = {
         http_port: 8080,
     },
     status: {
-        client_app: {            
+        client_app: {
             running: false,
-        },
-    }
-
+        }
+    },
 };

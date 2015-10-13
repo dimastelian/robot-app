@@ -1,2 +1,2 @@
-
+#windowContainer{margin:0px;padding:0px;background:#333}#windowContainer div{box-sizing:border-box}#windowContainer .window{background:#525252;color:#fff;height:100%}#windowContainer .window .window-header{color:#525252;padding:5px;-webkit-app-region:drag;-webkit-user-select:none}#windowContainer .window .window-header .window-title{float:left;color:#fff;width:70%;-webkit-app-region:drag}#windowContainer .window .window-header .window-buttons{float:left;width:30%;text-align:right;-webkit-app-region:no-drag}#windowContainer .window .window-body{padding:2px;padding-top:0px;background:#333;width:100%;height:100%}
 /*# sourceMappingURL=main.css.map */

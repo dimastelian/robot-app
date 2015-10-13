@@ -5,12 +5,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/knockout.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/app.js"></script>
         <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="assets/css/main.css"/>
+        <script>
+            var app = new App.Main();
+            app.init();
+        </script>
     </head>
-    <body>
-        <div>TODO write content</div>
+    <body id="windowContainer">
+        <div class="window">
+                <div class="window-header clearfix">
+                        <div class="window-title">
+                            Window Title Here
+                        </div>
+                        <div class="window-buttons">
+                            <a href="#" class="window-minimize">_</a>
+                            <a href="#" class="window-maximize">[]</a>
+                            <a href="#" class="window-close">X</a>
+                        </div>
+                </div>
+
+                <div class="window-body">
+
+                    Window Content Here!
+
+                </div>
+
+                <div class="window-footer">
+
+                </div>
+        </div>
+
+        <script>
+            app.main();
+        </script>
     </body>
+
 </html>

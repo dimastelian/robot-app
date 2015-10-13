@@ -3,7 +3,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         nwjs: {
             options: {
-                platforms: ['win64'],
+                platforms: ['win64', 'linux'],
                 version: '0.12.0',
                 buildDir: './release'
             },
@@ -15,8 +15,9 @@ module.exports = function (grunt) {
             },
             main: {
                 src: [
+                    './src/js/utils.js',
                     './src/js/init.js',
-                    './src/js/**/*.js',
+                    './src/js/*/*.js',
                     './src/js/main.js',
                 ],
                 dest: './app/assets/js/app.js',
@@ -30,7 +31,7 @@ module.exports = function (grunt) {
                 files: {
                     './app/assets/js/app.min.js': ['./app/assets/js/app.js']
                 }
-            }
+            },
         },
         sass: {// Task
 
@@ -55,7 +56,10 @@ module.exports = function (grunt) {
         exec: {
             run_win64: {
                 cmd: 'start .\\cache\\0.12.0\\win64\\nw.exe .\\app\\',
-            }
+            },
+            run_linux64: {
+                cmd: './cache/0.12.0/linux64/nw ./app/',
+            },
         },
         watch: {
             build: {
@@ -74,9 +78,12 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('build', ['sass:main', 'sass:bootstrap', 'concat:main', 'uglify:main', 'nwjs']);
+    grunt.loadNpmTasks('grunt-browserify');
+
     grunt.registerTask('build_quick', ['sass:main', 'concat:main', 'uglify:main', 'nwjs']);
+    grunt.registerTask('build', ['sass:bootstrap', 'build_quick']);
     grunt.registerTask('run', ['build_quick', 'exec:run_win64']);
+    grunt.registerTask('run:linux64', ['build_quick', 'exec:run_linux64']);
 
 
 };
