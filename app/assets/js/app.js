@@ -7,6 +7,13 @@ var Utils = {
 Utils.dirs = {
     client_views: Utils.basedir + '/client_src/views'
 };
+var nw = require('nw.gui'),
+    jQuery = require('jquery'),
+    backbone = require('backbone'),
+    underscore = require('underscore'),    
+    baseWindow = window,
+    nwWindow = nw.Window.get();
+    
 var App = {
     config: {
         http_port: 8080,
@@ -15,7 +22,7 @@ var App = {
         client_app: {
             running: false,
         }
-    },
+    }
 };
 
 App.HTTPServer = function () {
@@ -56,19 +63,59 @@ App.HTTPServer = function () {
 
 
 
+if(!App.templates){
+    App.templates = {};
+}
+
+App.templates.window = {
+    header: '<div class="window-header clearfix">\
+                        <div class="window-title">\
+                            Window Title Here\
+                        </div>\
+                        <div class="window-buttons">\
+                            <a href="#" class="window-minimize">_</a>\
+                            <a href="#" class="window-maximize">[]</a>\
+                            <a href="#" class="window-close">X</a>\
+                        </div>\
+                </div>',
+
+    body_start: '<div class="window-body">',
+
+    body_end: '</div>\
+                <div class="window-footer">\
+                </div>'
+};
 
 App.Main = function() {
+    
+    var app = this;
+    
+    app.initialized = false;
+    app.callback_init = function(){};
+    app.callback_main = function(){};
 
-    var fn = this;
-
-    fn.init = function() {
-
+    app.init = function(callback) {
+        app.callback_init = callback;
+        app.initialized = true;
+    };
+    
+    app.main = function(callback) {
+        app.callback_main = callback;
     };
 
-    fn.main = function(){
-            
-    };
+    app.initWindow = function(windowClass)
+    {
+        alert('foo');
+    }
 
-    return fn;
+    jQuery(function($){
+        app.callback_init();
+        
+        $(baseWindow).ready(function(){
+            app.callback_main();
+        })
+    });
+
+    return this;
 
 };

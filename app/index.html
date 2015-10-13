@@ -3,44 +3,73 @@
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/knockout.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">                
         <script src="assets/js/app.js"></script>
+        <script src="assets/js/bundle.js"></script>
         <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="assets/css/main.css"/>
         <script>
             var app = new App.Main();
-            app.init();
+            app.init(function(){
+                app.initWindow('.window');
+            });
         </script>
     </head>
-    <body id="windowContainer">
-        <div class="window">
-                <div class="window-header clearfix">
-                        <div class="window-title">
-                            Window Title Here
-                        </div>
-                        <div class="window-buttons">
-                            <a href="#" class="window-minimize">_</a>
-                            <a href="#" class="window-maximize">[]</a>
-                            <a href="#" class="window-close">X</a>
-                        </div>
+    <body>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Simple Sidebar</h1>
+                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </div>
                 </div>
-
-                <div class="window-body">
-
-                    Window Content Here!
-
-                </div>
-
-                <div class="window-footer">
-
-                </div>
+            </div>
         </div>
 
         <script>
-            app.main();
+            app.main(function(){
+                
+                $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+                
+            });
         </script>
     </body>
 

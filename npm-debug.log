@@ -1,0 +1,555 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'F:\\develop\\node\\node.exe',
+1 verbose cli   'F:\\develop\\node\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'robotjs',
+1 verbose cli   '--save' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 warn package.json robot-app@1.0.0 No description
+5 warn package.json robot-app@1.0.0 No repository field.
+6 warn package.json robot-app@1.0.0 No README data
+7 silly cache add args [ 'robotjs', null ]
+8 verbose cache add spec robotjs
+9 silly cache add parsed spec { raw: 'robotjs',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'robotjs',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 verbose addNamed robotjs@*
+11 silly addNamed semver.valid null
+12 silly addNamed semver.validRange *
+13 silly addNameRange { name: 'robotjs', range: '*', hasData: false }
+14 silly mapToRegistry name robotjs
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/robotjs
+18 verbose addNameRange registry:https://registry.npmjs.org/robotjs not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/robotjs
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 11:34:37 PM
+22 verbose request id 519cb7a9b9746e06
+23 verbose etag "5GM9EQ3IA0SZ95QPAHUTINYKH"
+24 http request GET https://registry.npmjs.org/robotjs
+25 http 304 https://registry.npmjs.org/robotjs
+26 silly get cb [ 304,
+26 silly get   { date: 'Tue, 13 Oct 2015 20:33:49 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=60',
+26 silly get     etag: '"5GM9EQ3IA0SZ95QPAHUTINYKH"',
+26 silly get     age: '49',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-fra1226-FRA',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1444768429.434130,VS0,VE0',
+26 silly get     vary: 'Accept' } ]
+27 verbose etag https://registry.npmjs.org/robotjs from cache
+28 verbose get saving robotjs to C:\Users\Stelian2\AppData\Roaming\npm-cache\registry.npmjs.org\robotjs\.cache.json
+29 silly addNameRange number 2 { name: 'robotjs', range: '*', hasData: true }
+30 silly addNameRange versions [ 'robotjs',
+30 silly addNameRange   [ '0.0.1',
+30 silly addNameRange     '0.0.2',
+30 silly addNameRange     '0.0.3',
+30 silly addNameRange     '0.0.4',
+30 silly addNameRange     '0.0.5',
+30 silly addNameRange     '0.1.0',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.1.2',
+30 silly addNameRange     '0.1.3',
+30 silly addNameRange     '0.1.4',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.2.1',
+30 silly addNameRange     '0.2.2',
+30 silly addNameRange     '0.2.3',
+30 silly addNameRange     '0.2.4',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.3.1' ] ]
+31 verbose addNamed robotjs@0.3.1
+32 silly addNamed semver.valid 0.3.1
+33 silly addNamed semver.validRange 0.3.1
+34 silly cache afterAdd robotjs@0.3.1
+35 verbose afterAdd C:\Users\Stelian2\AppData\Roaming\npm-cache\robotjs\0.3.1\package\package.json not in flight; writing
+36 verbose afterAdd C:\Users\Stelian2\AppData\Roaming\npm-cache\robotjs\0.3.1\package\package.json written
+37 silly install resolved [ { name: 'robotjs',
+37 silly install resolved     version: '0.3.1',
+37 silly install resolved     description: 'Node.js Desktop Automation.',
+37 silly install resolved     main: 'index.js',
+37 silly install resolved     scripts: { test: 'node test/all.js', install: 'node-gyp rebuild' },
+37 silly install resolved     repository:
+37 silly install resolved      { type: 'git',
+37 silly install resolved        url: 'git+https://github.com/octalmage/robotjs.git' },
+37 silly install resolved     keywords:
+37 silly install resolved      [ 'Automation',
+37 silly install resolved        'GUI',
+37 silly install resolved        'mouse',
+37 silly install resolved        'keyboard',
+37 silly install resolved        'screenshot',
+37 silly install resolved        'image',
+37 silly install resolved        'pixel' ],
+37 silly install resolved     author: { name: 'Jason Stallings' },
+37 silly install resolved     license: 'MIT',
+37 silly install resolved     gypfile: true,
+37 silly install resolved     bugs: { url: 'https://github.com/octalmage/robotjs/issues' },
+37 silly install resolved     homepage: 'https://github.com/octalmage/robotjs',
+37 silly install resolved     dependencies: { nan: '^2.0.9' },
+37 silly install resolved     devDependencies: { tape: '^3.5.0' },
+37 silly install resolved     gitHead: '6ecb2f1d11d6890a619fb5d9c92380b226ad8a4c',
+37 silly install resolved     _id: 'robotjs@0.3.1',
+37 silly install resolved     _shasum: '54a0b1cd18e7f7b76180ec802c828937a0ab2d1e',
+37 silly install resolved     _from: 'robotjs@*',
+37 silly install resolved     _npmVersion: '2.11.3',
+37 silly install resolved     _nodeVersion: '0.12.7',
+37 silly install resolved     _npmUser: { name: 'octalmage', email: 'jason@stallin.gs' },
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: '54a0b1cd18e7f7b76180ec802c828937a0ab2d1e',
+37 silly install resolved        tarball: 'http://registry.npmjs.org/robotjs/-/robotjs-0.3.1.tgz' },
+37 silly install resolved     maintainers: [ [Object] ],
+37 silly install resolved     directories: {},
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/robotjs/-/robotjs-0.3.1.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install robotjs@0.3.1 into F:\develop\nw-develop\robot-app
+39 info installOne robotjs@0.3.1
+40 verbose installOne of robotjs to F:\develop\nw-develop\robot-app not in flight; installing
+41 verbose lock using C:\Users\Stelian2\AppData\Roaming\npm-cache\_locks\robotjs-915d010ee090c333.lock for F:\develop\nw-develop\robot-app\node_modules\robotjs
+42 silly install write writing robotjs 0.3.1 to F:\develop\nw-develop\robot-app\node_modules\robotjs
+43 silly cache addNamed cb robotjs@0.3.1
+44 verbose unbuild node_modules\robotjs
+45 silly gentlyRm F:\develop\nw-develop\robot-app\node_modules\robotjs is being purged from base F:\develop\nw-develop\robot-app
+46 verbose gentlyRm don't care about contents; nuking F:\develop\nw-develop\robot-app\node_modules\robotjs
+47 verbose tar unpack C:\Users\Stelian2\AppData\Roaming\npm-cache\robotjs\0.3.1\package.tgz
+48 verbose tar unpacking to F:\develop\nw-develop\robot-app\node_modules\robotjs
+49 silly gentlyRm F:\develop\nw-develop\robot-app\node_modules\robotjs is being purged
+50 verbose gentlyRm don't care about contents; nuking F:\develop\nw-develop\robot-app\node_modules\robotjs
+51 silly gunzTarPerm modes [ '777', '666' ]
+52 silly gunzTarPerm extractEntry package.json
+53 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+54 silly gunzTarPerm extractEntry .npmignore
+55 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+56 silly gunzTarPerm extractEntry README.md
+57 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+58 silly gunzTarPerm extractEntry test.js
+59 silly gunzTarPerm modified mode [ 'test.js', 420, 438 ]
+60 silly gunzTarPerm extractEntry index.js
+61 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+62 silly gunzTarPerm extractEntry binding.gyp
+63 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+64 silly gunzTarPerm extractEntry .travis.yml
+65 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+66 silly gunzTarPerm extractEntry src/microsleep.h
+67 silly gunzTarPerm modified mode [ 'src/microsleep.h', 420, 438 ]
+68 silly gunzTarPerm extractEntry src/MMBitmap.c
+69 silly gunzTarPerm modified mode [ 'src/MMBitmap.c', 420, 438 ]
+70 silly gunzTarPerm extractEntry src/MMPointArray.c
+71 silly gunzTarPerm modified mode [ 'src/MMPointArray.c', 420, 438 ]
+72 silly gunzTarPerm extractEntry src/MMPointArray.h
+73 silly gunzTarPerm modified mode [ 'src/MMPointArray.h', 420, 438 ]
+74 silly gunzTarPerm extractEntry src/UTHashTable.c
+75 silly gunzTarPerm modified mode [ 'src/UTHashTable.c', 420, 438 ]
+76 silly gunzTarPerm extractEntry src/UTHashTable.h
+77 silly gunzTarPerm modified mode [ 'src/UTHashTable.h', 420, 438 ]
+78 silly gunzTarPerm extractEntry src/alert.c
+79 silly gunzTarPerm modified mode [ 'src/alert.c', 420, 438 ]
+80 silly gunzTarPerm extractEntry src/alert.h
+81 silly gunzTarPerm modified mode [ 'src/alert.h', 420, 438 ]
+82 silly gunzTarPerm extractEntry src/base64.c
+83 silly gunzTarPerm modified mode [ 'src/base64.c', 420, 438 ]
+84 silly gunzTarPerm extractEntry src/base64.h
+85 silly gunzTarPerm modified mode [ 'src/base64.h', 420, 438 ]
+86 silly gunzTarPerm extractEntry src/bitmap_find.c
+87 silly gunzTarPerm modified mode [ 'src/bitmap_find.c', 420, 438 ]
+88 silly gunzTarPerm extractEntry src/bitmap_find.h
+89 silly gunzTarPerm modified mode [ 'src/bitmap_find.h', 420, 438 ]
+90 silly gunzTarPerm extractEntry src/bmp_io.c
+91 silly gunzTarPerm modified mode [ 'src/bmp_io.c', 420, 438 ]
+92 silly gunzTarPerm extractEntry src/bmp_io.h
+93 silly gunzTarPerm modified mode [ 'src/bmp_io.h', 420, 438 ]
+94 silly gunzTarPerm extractEntry src/color_find.c
+95 silly gunzTarPerm modified mode [ 'src/color_find.c', 420, 438 ]
+96 silly gunzTarPerm extractEntry src/color_find.h
+97 silly gunzTarPerm modified mode [ 'src/color_find.h', 420, 438 ]
+98 silly gunzTarPerm extractEntry src/deadbeef_rand.c
+99 silly gunzTarPerm modified mode [ 'src/deadbeef_rand.c', 420, 438 ]
+100 silly gunzTarPerm extractEntry src/deadbeef_rand.h
+101 silly gunzTarPerm modified mode [ 'src/deadbeef_rand.h', 420, 438 ]
+102 silly gunzTarPerm extractEntry src/endian.h
+103 silly gunzTarPerm modified mode [ 'src/endian.h', 420, 438 ]
+104 silly gunzTarPerm extractEntry src/inline_keywords.h
+105 silly gunzTarPerm modified mode [ 'src/inline_keywords.h', 420, 438 ]
+106 silly gunzTarPerm extractEntry src/io.c
+107 silly gunzTarPerm modified mode [ 'src/io.c', 420, 438 ]
+108 silly gunzTarPerm extractEntry src/io.h
+109 silly gunzTarPerm modified mode [ 'src/io.h', 420, 438 ]
+110 silly gunzTarPerm extractEntry src/keycode.c
+111 silly gunzTarPerm modified mode [ 'src/keycode.c', 420, 438 ]
+112 silly gunzTarPerm extractEntry src/keycode.h
+113 silly gunzTarPerm modified mode [ 'src/keycode.h', 420, 438 ]
+114 silly gunzTarPerm extractEntry src/keypress.c
+115 silly gunzTarPerm modified mode [ 'src/keypress.c', 420, 438 ]
+116 silly gunzTarPerm extractEntry src/keypress.h
+117 silly gunzTarPerm modified mode [ 'src/keypress.h', 420, 438 ]
+118 silly gunzTarPerm extractEntry src/MMBitmap.h
+119 silly gunzTarPerm modified mode [ 'src/MMBitmap.h', 420, 438 ]
+120 silly gunzTarPerm extractEntry src/mouse.c
+121 silly gunzTarPerm modified mode [ 'src/mouse.c', 420, 438 ]
+122 silly gunzTarPerm extractEntry src/mouse.h
+123 silly gunzTarPerm modified mode [ 'src/mouse.h', 420, 438 ]
+124 silly gunzTarPerm extractEntry src/ms_stdbool.h
+125 silly gunzTarPerm modified mode [ 'src/ms_stdbool.h', 420, 438 ]
+126 silly gunzTarPerm extractEntry src/ms_stdint.h
+127 silly gunzTarPerm modified mode [ 'src/ms_stdint.h', 420, 438 ]
+128 silly gunzTarPerm extractEntry src/os.h
+129 silly gunzTarPerm modified mode [ 'src/os.h', 420, 438 ]
+130 silly gunzTarPerm extractEntry src/pasteboard.c
+131 silly gunzTarPerm modified mode [ 'src/pasteboard.c', 420, 438 ]
+132 silly gunzTarPerm extractEntry src/pasteboard.h
+133 silly gunzTarPerm modified mode [ 'src/pasteboard.h', 420, 438 ]
+134 silly gunzTarPerm extractEntry src/png_io.c
+135 silly gunzTarPerm modified mode [ 'src/png_io.c', 420, 438 ]
+136 silly gunzTarPerm extractEntry src/png_io.h
+137 silly gunzTarPerm modified mode [ 'src/png_io.h', 420, 438 ]
+138 silly gunzTarPerm extractEntry src/rgb.h
+139 silly gunzTarPerm modified mode [ 'src/rgb.h', 420, 438 ]
+140 silly gunzTarPerm extractEntry src/robotjs.cc
+141 silly gunzTarPerm modified mode [ 'src/robotjs.cc', 420, 438 ]
+142 silly gunzTarPerm extractEntry src/screen.c
+143 silly gunzTarPerm modified mode [ 'src/screen.c', 420, 438 ]
+144 silly gunzTarPerm extractEntry src/screen.h
+145 silly gunzTarPerm modified mode [ 'src/screen.h', 420, 438 ]
+146 silly gunzTarPerm extractEntry src/screengrab.c
+147 silly gunzTarPerm modified mode [ 'src/screengrab.c', 420, 438 ]
+148 silly gunzTarPerm extractEntry src/screengrab.h
+149 silly gunzTarPerm modified mode [ 'src/screengrab.h', 420, 438 ]
+150 silly gunzTarPerm extractEntry src/snprintf.c
+151 silly gunzTarPerm modified mode [ 'src/snprintf.c', 420, 438 ]
+152 silly gunzTarPerm extractEntry src/snprintf.h
+153 silly gunzTarPerm modified mode [ 'src/snprintf.h', 420, 438 ]
+154 silly gunzTarPerm extractEntry src/str_io.c
+155 silly gunzTarPerm modified mode [ 'src/str_io.c', 420, 438 ]
+156 silly gunzTarPerm extractEntry src/str_io.h
+157 silly gunzTarPerm modified mode [ 'src/str_io.h', 420, 438 ]
+158 silly gunzTarPerm extractEntry src/types.h
+159 silly gunzTarPerm modified mode [ 'src/types.h', 420, 438 ]
+160 silly gunzTarPerm extractEntry src/uthash.h
+161 silly gunzTarPerm modified mode [ 'src/uthash.h', 420, 438 ]
+162 silly gunzTarPerm extractEntry src/xdisplay.c
+163 silly gunzTarPerm modified mode [ 'src/xdisplay.c', 420, 438 ]
+164 silly gunzTarPerm extractEntry src/xdisplay.h
+165 silly gunzTarPerm modified mode [ 'src/xdisplay.h', 420, 438 ]
+166 silly gunzTarPerm extractEntry src/zlib_util.c
+167 silly gunzTarPerm modified mode [ 'src/zlib_util.c', 420, 438 ]
+168 silly gunzTarPerm extractEntry src/zlib_util.h
+169 silly gunzTarPerm modified mode [ 'src/zlib_util.h', 420, 438 ]
+170 silly gunzTarPerm extractEntry test/all.js
+171 silly gunzTarPerm modified mode [ 'test/all.js', 420, 438 ]
+172 silly gunzTarPerm extractEntry test/mouse.js
+173 silly gunzTarPerm modified mode [ 'test/mouse.js', 420, 438 ]
+174 silly gunzTarPerm extractEntry test/screen.js
+175 silly gunzTarPerm modified mode [ 'test/screen.js', 420, 438 ]
+176 info preinstall robotjs@0.3.1
+177 silly prepareForInstallMany adding nan@^2.0.9 from robotjs dependencies
+178 silly cache add args [ 'nan@^2.0.9', null ]
+179 verbose cache add spec nan@^2.0.9
+180 silly cache add parsed spec { raw: 'nan@^2.0.9',
+180 silly cache add   scope: null,
+180 silly cache add   name: 'nan',
+180 silly cache add   rawSpec: '^2.0.9',
+180 silly cache add   spec: '>=2.0.9 <3.0.0',
+180 silly cache add   type: 'range' }
+181 verbose addNamed nan@>=2.0.9 <3.0.0
+182 silly addNamed semver.valid null
+183 silly addNamed semver.validRange >=2.0.9 <3.0.0
+184 silly addNameRange { name: 'nan', range: '>=2.0.9 <3.0.0', hasData: false }
+185 silly mapToRegistry name nan
+186 silly mapToRegistry using default registry
+187 silly mapToRegistry registry https://registry.npmjs.org/
+188 silly mapToRegistry uri https://registry.npmjs.org/nan
+189 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+190 verbose request uri https://registry.npmjs.org/nan
+191 verbose request no auth needed
+192 info attempt registry request try #1 at 11:34:38 PM
+193 verbose etag "EEJEYBDBWDA07LWTXUI68JUWL"
+194 http request GET https://registry.npmjs.org/nan
+195 http 304 https://registry.npmjs.org/nan
+196 silly get cb [ 304,
+196 silly get   { date: 'Tue, 13 Oct 2015 20:33:50 GMT',
+196 silly get     via: '1.1 varnish',
+196 silly get     'cache-control': 'max-age=60',
+196 silly get     etag: '"EEJEYBDBWDA07LWTXUI68JUWL"',
+196 silly get     age: '41',
+196 silly get     connection: 'keep-alive',
+196 silly get     'x-served-by': 'cache-fra1247-FRA',
+196 silly get     'x-cache': 'HIT',
+196 silly get     'x-cache-hits': '1',
+196 silly get     'x-timer': 'S1444768430.566117,VS0,VE0',
+196 silly get     vary: 'Accept' } ]
+197 verbose etag https://registry.npmjs.org/nan from cache
+198 verbose get saving nan to C:\Users\Stelian2\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+199 silly addNameRange number 2 { name: 'nan', range: '>=2.0.9 <3.0.0', hasData: true }
+200 silly addNameRange versions [ 'nan',
+200 silly addNameRange   [ '0.3.0-wip',
+200 silly addNameRange     '0.3.0-wip2',
+200 silly addNameRange     '0.3.0',
+200 silly addNameRange     '0.3.1',
+200 silly addNameRange     '0.3.2',
+200 silly addNameRange     '0.4.0',
+200 silly addNameRange     '0.4.1',
+200 silly addNameRange     '0.4.2',
+200 silly addNameRange     '0.4.3',
+200 silly addNameRange     '0.4.4',
+200 silly addNameRange     '0.5.0',
+200 silly addNameRange     '0.5.1',
+200 silly addNameRange     '0.5.2',
+200 silly addNameRange     '0.6.0',
+200 silly addNameRange     '0.7.0',
+200 silly addNameRange     '0.7.1',
+200 silly addNameRange     '0.8.0',
+200 silly addNameRange     '1.0.0',
+200 silly addNameRange     '1.1.0',
+200 silly addNameRange     '1.1.1',
+200 silly addNameRange     '1.1.2',
+200 silly addNameRange     '1.2.0',
+200 silly addNameRange     '1.3.0',
+200 silly addNameRange     '1.4.0',
+200 silly addNameRange     '1.4.1',
+200 silly addNameRange     '1.5.0',
+200 silly addNameRange     '1.4.2',
+200 silly addNameRange     '1.4.3',
+200 silly addNameRange     '1.5.1',
+200 silly addNameRange     '1.5.2',
+200 silly addNameRange     '1.6.0',
+200 silly addNameRange     '1.5.3',
+200 silly addNameRange     '1.6.1',
+200 silly addNameRange     '1.6.2',
+200 silly addNameRange     '1.7.0',
+200 silly addNameRange     '1.8.0',
+200 silly addNameRange     '1.8.1',
+200 silly addNameRange     '1.8.2',
+200 silly addNameRange     '1.8.3',
+200 silly addNameRange     '1.8.4',
+200 silly addNameRange     '1.9.0',
+200 silly addNameRange     '2.0.0',
+200 silly addNameRange     '2.0.1',
+200 silly addNameRange     '2.0.2',
+200 silly addNameRange     '2.0.3',
+200 silly addNameRange     '2.0.4',
+200 silly addNameRange     '2.0.5',
+200 silly addNameRange     '2.0.6',
+200 silly addNameRange     '2.0.7',
+200 silly addNameRange     '2.0.8',
+200 silly addNameRange     '2.0.9',
+200 silly addNameRange     '2.1.0' ] ]
+201 verbose addNamed nan@2.1.0
+202 silly addNamed semver.valid 2.1.0
+203 silly addNamed semver.validRange 2.1.0
+204 silly cache afterAdd nan@2.1.0
+205 verbose afterAdd C:\Users\Stelian2\AppData\Roaming\npm-cache\nan\2.1.0\package\package.json not in flight; writing
+206 verbose afterAdd C:\Users\Stelian2\AppData\Roaming\npm-cache\nan\2.1.0\package\package.json written
+207 silly install resolved [ { name: 'nan',
+207 silly install resolved     version: '2.1.0',
+207 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 4 compatibility',
+207 silly install resolved     main: 'include_dirs.js',
+207 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+207 silly install resolved     scripts:
+207 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+207 silly install resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2013 --directory test',
+207 silly install resolved        docs: 'doc/.build.sh' },
+207 silly install resolved     contributors:
+207 silly install resolved      [ [Object],
+207 silly install resolved        [Object],
+207 silly install resolved        [Object],
+207 silly install resolved        [Object],
+207 silly install resolved        [Object],
+207 silly install resolved        [Object],
+207 silly install resolved        [Object] ],
+207 silly install resolved     devDependencies:
+207 silly install resolved      { bindings: '~1.2.1',
+207 silly install resolved        commander: '^2.8.1',
+207 silly install resolved        glob: '^5.0.14',
+207 silly install resolved        'node-gyp': '~3.0.1',
+207 silly install resolved        tap: '~0.7.1',
+207 silly install resolved        xtend: '~4.0.0' },
+207 silly install resolved     license: 'MIT',
+207 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+207 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+207 silly install resolved     _id: 'nan@2.1.0',
+207 silly install resolved     _shasum: '020a7ccedc63fdee85f85967d5607849e74abbe8',
+207 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.1.0.tgz',
+207 silly install resolved     _from: 'nan@>=2.0.9 <3.0.0',
+207 silly install resolved     _npmVersion: '3.3.5',
+207 silly install resolved     _nodeVersion: '4.1.2',
+207 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+207 silly install resolved     dist:
+207 silly install resolved      { shasum: '020a7ccedc63fdee85f85967d5607849e74abbe8',
+207 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-2.1.0.tgz' },
+207 silly install resolved     maintainers: [ [Object], [Object] ],
+207 silly install resolved     directories: {},
+207 silly install resolved     readme: 'ERROR: No README data found!' } ]
+208 info install nan@2.1.0 into F:\develop\nw-develop\robot-app\node_modules\robotjs
+209 info installOne nan@2.1.0
+210 verbose installOne of nan to F:\develop\nw-develop\robot-app\node_modules\robotjs not in flight; installing
+211 verbose lock using C:\Users\Stelian2\AppData\Roaming\npm-cache\_locks\nan-4eaf0a6b12777c4b.lock for F:\develop\nw-develop\robot-app\node_modules\robotjs\node_modules\nan
+212 silly install write writing nan 2.1.0 to F:\develop\nw-develop\robot-app\node_modules\robotjs\node_modules\nan
+213 silly cache addNamed cb nan@2.1.0
+214 verbose unbuild node_modules\robotjs\node_modules\nan
+215 silly gentlyRm F:\develop\nw-develop\robot-app\node_modules\robotjs\node_modules\nan is being purged from base F:\develop\nw-develop\robot-app
+216 verbose gentlyRm don't care about contents; nuking F:\develop\nw-develop\robot-app\node_modules\robotjs\node_modules\nan
+217 verbose tar unpack C:\Users\Stelian2\AppData\Roaming\npm-cache\nan\2.1.0\package.tgz
+218 verbose tar unpacking to F:\develop\nw-develop\robot-app\node_modules\robotjs\node_modules\nan
+219 silly gentlyRm F:\develop\nw-develop\robot-app\node_modules\robotjs\node_modules\nan is being purged
+220 verbose gentlyRm don't care about contents; nuking F:\develop\nw-develop\robot-app\node_modules\robotjs\node_modules\nan
+221 silly gunzTarPerm modes [ '777', '666' ]
+222 silly gunzTarPerm extractEntry package.json
+223 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+224 silly gunzTarPerm extractEntry README.md
+225 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+226 silly gunzTarPerm extractEntry include_dirs.js
+227 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+228 silly gunzTarPerm extractEntry nan_converters.h
+229 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
+230 silly gunzTarPerm extractEntry LICENSE.md
+231 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+232 silly gunzTarPerm extractEntry .dntrc
+233 silly gunzTarPerm modified mode [ '.dntrc', 436, 438 ]
+234 silly gunzTarPerm extractEntry appveyor.yml
+235 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 438 ]
+236 silly gunzTarPerm extractEntry doc/new.md
+237 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
+238 silly gunzTarPerm extractEntry doc/.build.sh
+239 silly gunzTarPerm modified mode [ 'doc/.build.sh', 509, 511 ]
+240 silly gunzTarPerm extractEntry doc/buffers.md
+241 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
+242 silly gunzTarPerm extractEntry doc/callback.md
+243 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
+244 silly gunzTarPerm extractEntry doc/converters.md
+245 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
+246 silly gunzTarPerm extractEntry doc/errors.md
+247 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
+248 silly gunzTarPerm extractEntry doc/maybe_types.md
+249 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+250 silly gunzTarPerm extractEntry doc/methods.md
+251 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+252 silly gunzTarPerm extractEntry doc/asyncworker.md
+253 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
+254 silly gunzTarPerm extractEntry doc/node_misc.md
+255 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
+256 silly gunzTarPerm extractEntry doc/persistent.md
+257 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
+258 silly gunzTarPerm extractEntry doc/scopes.md
+259 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
+260 silly gunzTarPerm extractEntry doc/script.md
+261 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
+262 silly gunzTarPerm extractEntry doc/string_bytes.md
+263 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
+264 silly gunzTarPerm extractEntry doc/v8_internals.md
+265 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
+266 silly gunzTarPerm extractEntry doc/v8_misc.md
+267 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
+268 silly gunzTarPerm extractEntry nan.h
+269 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+270 silly gunzTarPerm extractEntry nan_callbacks.h
+271 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
+272 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+273 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
+274 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+275 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+276 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+277 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
+278 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+279 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
+280 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+281 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+282 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+283 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+284 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+285 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
+286 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+287 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
+288 silly gunzTarPerm extractEntry nan_new.h
+289 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+290 silly gunzTarPerm extractEntry nan_object_wrap.h
+291 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
+292 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+293 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
+294 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+295 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
+296 silly gunzTarPerm extractEntry nan_string_bytes.h
+297 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+298 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+299 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 438 ]
+300 silly gunzTarPerm extractEntry nan_weak.h
+301 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
+302 silly gunzTarPerm extractEntry CHANGELOG.md
+303 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+304 silly gunzTarPerm extractEntry tools/package.json
+305 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
+306 silly gunzTarPerm extractEntry tools/README.md
+307 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
+308 silly gunzTarPerm extractEntry tools/1to2.js
+309 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
+310 info preinstall nan@2.1.0
+311 silly install resolved []
+312 verbose about to build F:\develop\nw-develop\robot-app\node_modules\robotjs\node_modules\nan
+313 info build F:\develop\nw-develop\robot-app\node_modules\robotjs\node_modules\nan
+314 verbose linkStuff [ false,
+314 verbose linkStuff   false,
+314 verbose linkStuff   false,
+314 verbose linkStuff   'F:\\develop\\nw-develop\\robot-app\\node_modules\\robotjs\\node_modules' ]
+315 info linkStuff nan@2.1.0
+316 verbose linkBins nan@2.1.0
+317 verbose linkMans nan@2.1.0
+318 verbose rebuildBundles nan@2.1.0
+319 info install nan@2.1.0
+320 info postinstall nan@2.1.0
+321 verbose unlock done using C:\Users\Stelian2\AppData\Roaming\npm-cache\_locks\nan-4eaf0a6b12777c4b.lock for F:\develop\nw-develop\robot-app\node_modules\robotjs\node_modules\nan
+322 verbose about to build F:\develop\nw-develop\robot-app\node_modules\robotjs
+323 info build F:\develop\nw-develop\robot-app\node_modules\robotjs
+324 verbose linkStuff [ false,
+324 verbose linkStuff   false,
+324 verbose linkStuff   false,
+324 verbose linkStuff   'F:\\develop\\nw-develop\\robot-app\\node_modules' ]
+325 info linkStuff robotjs@0.3.1
+326 verbose linkBins robotjs@0.3.1
+327 verbose linkMans robotjs@0.3.1
+328 verbose rebuildBundles robotjs@0.3.1
+329 verbose rebuildBundles [ 'nan' ]
+330 info install robotjs@0.3.1
+331 verbose unsafe-perm in lifecycle true
+332 info robotjs@0.3.1 Failed to exec install script
+333 verbose unlock done using C:\Users\Stelian2\AppData\Roaming\npm-cache\_locks\robotjs-915d010ee090c333.lock for F:\develop\nw-develop\robot-app\node_modules\robotjs
+334 verbose stack Error: robotjs@0.3.1 install: `node-gyp rebuild`
+334 verbose stack Exit status 1
+334 verbose stack     at EventEmitter.<anonymous> (F:\develop\node\node_modules\npm\lib\utils\lifecycle.js:213:16)
+334 verbose stack     at EventEmitter.emit (events.js:110:17)
+334 verbose stack     at ChildProcess.<anonymous> (F:\develop\node\node_modules\npm\lib\utils\spawn.js:14:12)
+334 verbose stack     at ChildProcess.emit (events.js:110:17)
+334 verbose stack     at maybeClose (child_process.js:1015:16)
+334 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+335 verbose pkgid robotjs@0.3.1
+336 verbose cwd F:\develop\nw-develop\robot-app
+337 error Windows_NT 6.3.9600
+338 error argv "F:\\develop\\node\\node.exe" "F:\\develop\\node\\node_modules\\npm\\bin\\npm-cli.js" "install" "robotjs" "--save"
+339 error node v0.12.2
+340 error npm  v2.7.4
+341 error code ELIFECYCLE
+342 error robotjs@0.3.1 install: `node-gyp rebuild`
+342 error Exit status 1
+343 error Failed at the robotjs@0.3.1 install script 'node-gyp rebuild'.
+343 error This is most likely a problem with the robotjs package,
+343 error not with npm itself.
+343 error Tell the author that this fails on your system:
+343 error     node-gyp rebuild
+343 error You can get their info via:
+343 error     npm owner ls robotjs
+343 error There is likely additional logging output above.
+344 verbose exit [ 1, true ]
+345 verbose unbuild node_modules\robotjs
+346 info preuninstall robotjs@0.3.1
+347 info uninstall robotjs@0.3.1
+348 verbose unbuild rmStuff robotjs@0.3.1 from F:\develop\nw-develop\robot-app\node_modules
+349 info postuninstall robotjs@0.3.1
+350 silly gentlyRm F:\develop\nw-develop\robot-app\node_modules\robotjs is being purged from base F:\develop\nw-develop\robot-app
+351 verbose gentlyRm don't care about contents; nuking F:\develop\nw-develop\robot-app\node_modules\robotjs
+352 silly vacuum-fs purging F:\develop\nw-develop\robot-app\node_modules\robotjs
+353 silly vacuum-fs quitting because other entries in F:\develop\nw-develop\robot-app\node_modules

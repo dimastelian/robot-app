@@ -22,6 +22,13 @@ module.exports = function (grunt) {
                 ],
                 dest: './app/assets/js/app.js',
             },
+            
+        },
+        browserify: {
+            main: {
+                src: ['./src/js/frontend.js'],
+                dest: './app/assets/js/bundle.js'
+            }
         },
         uglify: {
             options: {
@@ -69,9 +76,15 @@ module.exports = function (grunt) {
                     spawn: false,
                 },
             },
+            scripts: {
+                files: ['./src/**/*.js'],
+                tasks: ['scripts'],
+                options: {
+                    spawn: false,
+                },
+            },
         },
     });
-
     grunt.loadNpmTasks('grunt-nw-builder');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -79,11 +92,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browserify');
-
-    grunt.registerTask('build_quick', ['sass:main', 'concat:main', 'uglify:main', 'nwjs']);
+    
+    grunt.registerTask('scripts', ['concat:main', 'browserify:main', 'uglify:main']);
+    grunt.registerTask('build_quick', ['sass:main', 'scripts', 'nwjs']);
     grunt.registerTask('build', ['sass:bootstrap', 'build_quick']);
     grunt.registerTask('run', ['build_quick', 'exec:run_win64']);
     grunt.registerTask('run:linux64', ['build_quick', 'exec:run_linux64']);
-
-
 };

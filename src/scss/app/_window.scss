@@ -1,8 +1,8 @@
-
 #windowContainer {
     margin:0px;
     padding:0px;
     background: $color_background_base;
+    border: 1px solid $color_background_lighter;
 
     div {
         box-sizing: border-box;
